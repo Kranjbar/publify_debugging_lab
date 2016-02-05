@@ -28,7 +28,7 @@ var bind_sortable = function() {
     helper: "clone",
     revert: "invalid"
   });
-  $('.sidebar_item').on('ajax:success', function(data, textStatus, xhr) {
+  $('.sidebar-item').on('ajax:success', function(data, textStatus, xhr) {
     $(this).parent().replaceWith(data);
   }
   );
